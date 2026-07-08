@@ -1,0 +1,20 @@
+{
+  "_captured_at": "2026-07-08T03:27:33.323241+00:00",
+  "_captured_run_id": "r_64537cfdb84548b7be7c07c349c7db36",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: PROC TTEST data=ADSL",
+    "NOTE: ODS OUTPUT: STATISTICS -> sard_ttest_Statistics",
+    "NOTE: Wrote ard_ttest (11 rows, 7 columns).",
+    "NOTE: PROC PRINT completed: 11 observations printed, 7 variables"
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

@@ -1,0 +1,61 @@
+NOTE: Option OBS changed to 100.
+NOTE: DATA ADSL
+
+NOTE: Processing inline DATALINES (30 lines)
+
+NOTE: Read 30 rows from DATALINES.
+NOTE: Wrote ADSL (30 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC TTEST data=ADSL
+
+NOTE: ODS OUTPUT: STATISTICS -> sard_ttest_Statistics
+NOTE: ODS OUTPUT: TTESTS -> sard_ttest_Ttests
+NOTE: ODS plot written: ttest_summary.spec.json
+NOTE: PROC TTEST ODS Graphics generated.
+NOTE: PROC TTEST statement used.
+NOTE: DATA sard_ttest_Statistics_1
+
+
+NOTE: Read 3 rows from sard_ttest_Statistics.
+NOTE: Wrote sard_ttest_Statistics_1 (2 rows, 15 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA sard_ttest_TTests_1
+
+
+NOTE: Read 2 rows from sard_ttest_Ttests.
+NOTE: Wrote sard_ttest_TTests_1 (9 rows, 12 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA ard_ttest
+
+
+NOTE: Read 2 rows from sard_ttest_statistics_1.
+NOTE: Read 11 rows from sard_ttest_ttests_1.
+NOTE: Wrote ard_ttest (11 rows, 7 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC DELETE datasets=sard_ttest_statistics
+
+NOTE: Deleting SARD_TTEST_STATISTICS (memtype=DATA).
+NOTE: 1 dataset(s) deleted.
+NOTE: PROC DELETE datasets=sard_ttest_statistics_1
+
+NOTE: Deleting SARD_TTEST_STATISTICS_1 (memtype=DATA).
+NOTE: 1 dataset(s) deleted.
+NOTE: PROC DELETE datasets=sard_ttest_ttests
+
+NOTE: Deleting SARD_TTEST_TTESTS (memtype=DATA).
+NOTE: 1 dataset(s) deleted.
+NOTE: PROC DELETE datasets=sard_ttest_ttests_1
+
+NOTE: Deleting SARD_TTEST_TTESTS_1 (memtype=DATA).
+NOTE: 1 dataset(s) deleted.
+NOTE: PROC PRINT data=ard_ttest
+
+NOTE: PROC PRINT completed: 11 observations printed, 7 variables

@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_macro_sard_stats_t_test",
+  "source_file": "sARDenX/06_macro/sard_stats_t_test.sas",
+  "source_blob_sha": "02ab6cdb98dd2070e2f4bdd188544cf56ad1be79",
+  "source_commit": "4522e4a1c8f9e1e2ef9ab440ad1937aef542c721",
+  "notes": "Macro %sard_stats_t_test copied verbatim from the source file; a small mock ADSL (TRT01PN two-level group, AGE) is built inline via DATALINES (the README invites substituting a typical ADSL dataset) and the README usage example is the caller. Runs clean on Jenner 0.1.0 (PROC TTEST + ODS OUTPUT), producing the ARD-style long dataset ard_ttest."
+}

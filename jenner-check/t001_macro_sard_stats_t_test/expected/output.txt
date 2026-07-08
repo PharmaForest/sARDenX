@@ -1,0 +1,40 @@
+The TTEST Procedure                
+                  Variable:  AGE                  
+
+TRT01PN            N      Mean   Std Dev   Std Err
+----------  --------  --------  --------  --------
+1                 15   50.6000    8.9746    2.3172
+2                 15   52.5333    8.7331    2.2549
+Diff (1-2)             -1.9333                    
+
+TRT01PN     Lower CL Mean      Mean  Upper CL Mean  Lower CL Std Dev   Std Dev  Upper CL Std Dev
+----------  -------------  --------  -------------  ----------------  --------  ----------------
+1                 45.6301   50.6000        55.5699            6.5705    8.9746           14.1538
+2                 47.6971   52.5333        57.3696            6.3937    8.7331           13.7729
+Diff (1-2)        -8.5564   -1.9333         4.6897            7.0269    8.8546           11.9755
+
+Method         Variances        DF   t Value  Pr > |t|
+-------------  ---------  --------  --------  --------
+Pooled         Equal            28     -0.60    0.5547
+Satterthwaite  Unequal        28.0     -0.60    0.5547
+
+   Equality of Variances    
+
+Method     F Value    Pr > F
+--------  --------  --------
+Folded F      1.06    0.9201
+
+
+ group1  variable    stat_name           stat_label           stat                    fmt_fun  Additional_Notes_in_SAS
+-------  --------  -----------  -------------------  -------------  -------------------------  -----------------------
+TRT01PN  AGE       estimate1    Group 1 Mean                  50.6  1                          TRT01PN=1
+TRT01PN  AGE       estimate2    Group 2 Mean         52.5333333333  1                          TRT01PN=2
+TRT01PN  AGE       statistic    t Statistic          -0.5979517626  1
+TRT01PN  AGE       parameter    Degrees of Freedom   27.9791932428  1
+TRT01PN  AGE       p.value      p-value               0.5546817623  1
+TRT01PN  AGE       method       method                           2  2:Welch Two Sample t-test  Satterthwaite
+TRT01PN  AGE       alternative  alternative                      2  2:two.sided
+TRT01PN  AGE       conf.level   CI Confidence Level           0.95  1
+TRT01PN  AGE       mu           H0 Mean                          0  1
+TRT01PN  AGE       var.equal    Equal Variances                  0  0:N
+TRT01PN  AGE       paired       Paired t-test                    0  0:N
