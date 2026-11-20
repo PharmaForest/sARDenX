@@ -204,7 +204,7 @@ Example:
 );
 ~~~
 
-<img width="1334" height="364" alt="image" src="https://github.com/user-attachments/assets/917848dd-6b36-47fc-b405-ed266864d51b" />
+<img width="1894" height="527" alt="image" src="https://github.com/user-attachments/assets/6d3019cf-7243-4ee8-bf04-066a3cc156c7" />
 
 
 ---
